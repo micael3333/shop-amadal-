@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Amadalõ | Concept Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap');
+        
+        /* Fontes */
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Lato', sans-serif; }
+        
+        /* Paleta da Loja */
+        .bg-bordo { background-color: #6a1b29; } /* Bordô Elegante */
+        .text-bordo { color: #6a1b29; }
+        .bg-offwhite { background-color: #FDFBF7; }
+        
+        /* Efeitos Premium */
+        .image-container { overflow: hidden; }
+        .image-hover { transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .group:hover .image-hover { transform: scale(1.05); }
+        .quick-view-btn { opacity: 0; transition: opacity 0.3s ease; }
+        .group:hover .quick-view-btn { opacity: 1; }
+    </style>
+</head>
+<body class="bg-offwhite text-neutral-800 font-sans antialiased">
+
+    <div class="bg-bordo text-white text-xs font-bold tracking-widest text-center py-2 uppercase">
+        Frete Cortesia para Cuiabá | Atendimento Concierge
+    </div>
+
+    <nav class="bg-transparent absolute w-full z-50 transition-all duration-300 hover:bg-offwhite group">
+        <div class="container mx-auto px-6 py-6 flex justify-between items-center">
+            <div class="hidden md:flex space-x-8 text-sm font-bold tracking-widest uppercase text-white group-hover:text-neutral-800">
+                <a href="#" class="hover:text-bordo transition">Novidades</a>
+                <a href="#" class="hover:text-bordo transition">Vestidos</a>
+                <a href="#" class="hover:text-bordo transition">Essenciais</a>
+            </div>
+
+            <div class="text-center absolute left-1/2 transform -translate-x-1/2">
+                <h1 class="font-serif text-3xl md:text-4xl tracking-tight text-white group-hover:text-bordo transition">Casa Amadalõ</h1>
+            </div>
+
+            <div class="flex space-x-6 text-white group-hover:text-neutral-800 transition">
+                <a href="#"><i class="fas fa-search text-lg"></i></a>
+                <a href="#"><i class="far fa-user text-lg"></i></a>
+                <a href="#"><i class="fas fa-shopping-bag text-lg"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen w-full">
+        <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=2000&auto=format&fit=crop" alt="Nova Coleção" class="absolute inset-0 w-full h-full object-cover">
+        
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+            <p class="text-white uppercase tracking-[0.3em] text-sm mb-4 font-bold">Coleção Resort</p>
+            <h2 class="font-serif text-6xl md:text-8xl text-white mb-8 drop-shadow-lg italic">Natureza & Luxo</h2>
+            <a href="#shop" class="bg-white text-neutral-900 px-10 py-3 uppercase tracking-widest text-sm font-bold hover:bg-bordo hover:text-white transition duration-300">
+                Explorar Coleção
+            </a>
+        </div>
+    </header>
+
+    <section id="shop" class="container mx-auto px-4 py-24">
+        <div class="flex justify-between items-end mb-12">
+            <h3 class="font-serif text-4xl text-neutral-800">Destaques da Semana</h3>
+            <a href="#" class="text-sm font-bold uppercase tracking-widest border-b border-neutral-800 hover:text-bordo hover:border-bordo transition pb-1 hidden md:block">
+                Ver Tudo
+            </a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+            <div class="group cursor-pointer">
+                <div class="relative image-container aspect-[3/4] mb-4">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover image-hover" alt="Vestido">
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12">
+                        <button class="w-full bg-white bg-opacity-90 text-neutral-900 py-3 text-xs uppercase tracking-widest font-bold quick-view-btn hover:bg-bordo hover:text-white transition">
+                            Espiar Look
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h4 class="font-sans text-sm text-neutral-500 mb-1">Vestido Midi Tropical</h4>
+                    <p class="font-serif text-lg text-neutral-800">R$ 890,00</p>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative image-container aspect-[3/4] mb-4">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover image-hover" alt="Conjunto">
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12">
+                        <button class="w-full bg-white bg-opacity-90 text-neutral-900 py-3 text-xs uppercase tracking-widest font-bold quick-view-btn hover:bg-bordo hover:text-white transition">
+                            Espiar Look
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h4 class="font-sans text-sm text-neutral-500 mb-1">Conjunto Seda Off-White</h4>
+                    <p class="font-serif text-lg text-neutral-800">R$ 1.250,00</p>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative image-container aspect-[3/4] mb-4">
+                    <img src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover image-hover" alt="Blusa">
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12">
+                        <button class="w-full bg-white bg-opacity-90 text-neutral-900 py-3 text-xs uppercase tracking-widest font-bold quick-view-btn hover:bg-bordo hover:text-white transition">
+                            Espiar Look
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h4 class="font-sans text-sm text-neutral-500 mb-1">Saia Transpassada Flora</h4>
+                    <p class="font-serif text-lg text-neutral-800">R$ 650,00</p>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative image-container aspect-[3/4] mb-4">
+                    <img src="https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover image-hover" alt="Vestido Longo">
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12">
+                        <button class="w-full bg-white bg-opacity-90 text-neutral-900 py-3 text-xs uppercase tracking-widest font-bold quick-view-btn hover:bg-bordo hover:text-white transition">
+                            Espiar Look
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h4 class="font-sans text-sm text-neutral-500 mb-1">Kimono Bordado Ouro</h4>
+                    <p class="font-serif text-lg text-neutral-800">R$ 1.100,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="fixed bottom-6 right-6 bg-bordo text-white px-6 py-3 rounded-full shadow-2xl flex items-center space-x-2 hover:bg-neutral-900 transition duration-300 z-50 group">
+        <i class="fab fa-whatsapp text-xl"></i>
+        <span class="font-bold text-sm tracking-wide hidden group-hover:block transition-all">Atendimento Privé</span>
+    </a>
+
+</body>
+</html>
